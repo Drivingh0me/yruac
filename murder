@@ -1,0 +1,10 @@
+#!/bin/bash
+# murder is a command to conveniently sigkill a process
+
+pid_txt=$((ps aux | grep $1) | awk '{print $2}')
+
+while IFS= read -r line; do
+  kill -9 $line
+done <<< "$pid_txt"
+
+
