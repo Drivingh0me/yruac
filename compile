@@ -1,4 +1,0 @@
-#!/bin/bash
-
-# Compile everything without making object files first, 
-gcc -Os c89comm.c -o c89Comm -Wall -Wextra -fstack-usage

@@ -1,8 +1,5 @@
 # ingore everything in the build directory.
 build/**
-!build/*.txt
-c89comm
-c89Co*
 
 # ignore test directory.
 test/
